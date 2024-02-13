@@ -70,11 +70,7 @@ namespace Blazor.Contacts.Wasm.Repositories
 
                 return result > 0;
             }
-            catch (Exception e)
-            {
-
-                throw e;
-            }
+            catch (Exception) { throw; }
         }
 
         public async Task<bool> UpdateContact(Contact contact)
@@ -100,11 +96,7 @@ namespace Blazor.Contacts.Wasm.Repositories
 
                 return result > 0;
             }
-            catch (Exception e)
-            {
-
-                throw e;
-            }
+            catch (Exception){ throw; }
         }
     }
 }
